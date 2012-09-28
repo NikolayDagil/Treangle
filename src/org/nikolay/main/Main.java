@@ -9,7 +9,7 @@ public class Main {
 
 		Treangle treangle = new Treangle();
 
-		treangle.setA(7);
+		treangle.setA(3);
 		treangle.setB(4);
 		treangle.setC(5);
 
