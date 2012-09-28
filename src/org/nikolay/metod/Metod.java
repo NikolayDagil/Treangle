@@ -12,6 +12,13 @@ public class Metod {
 		return 0.25 * Math.sqrt((a + b + c) * (b + c - a) * (a + c - b)
 				* (a + b - c));
 	}
+	
+	public double height(double a, double b, double c) {
+		return 2
+				* 0.25
+				* Math.sqrt((a + b + c) * (b + c - a) * (a + c - b)
+						* (a + b - c)) / a;
+	}
 
 	/**
 	 * Данный метод проверяет является ли объект треугольником по трем известным
