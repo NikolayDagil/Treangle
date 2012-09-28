@@ -12,12 +12,16 @@ public class Metod {
 		return 0.25 * Math.sqrt((a + b + c) * (b + c - a) * (a + c - b)
 				* (a + b - c));
 	}
-	
+
 	public double height(double a, double b, double c) {
 		return 2
 				* 0.25
 				* Math.sqrt((a + b + c) * (b + c - a) * (a + c - b)
 						* (a + b - c)) / a;
+	}
+
+	public double angle(double a, double b, double c) {
+		return Math.cos((a * a - b * b - c * c) / 2 * b * c);
 	}
 
 	/**
@@ -32,9 +36,8 @@ public class Metod {
 	public double isCheckTreangl(double a, double b, double c) {
 
 		if (!isCheckForNul(a) && !isCheckForNul(b) && !isCheckForNul(c)) {
-									
-			if ((c <= a + b) && (a<= b +  c)
-					&& (b<= a + c )) {
+
+			if ((c <= a + b) && (a <= b + c) && (b <= a + c)) {
 				return IS_TREANGLE;
 			} else {
 				return NOT_TREANGLE;

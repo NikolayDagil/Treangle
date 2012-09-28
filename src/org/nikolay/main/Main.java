@@ -9,7 +9,7 @@ public class Main {
 
 		Treangle treangle = new Treangle();
 
-		treangle.setA(3);
+		treangle.setA(7);
 		treangle.setB(4);
 		treangle.setC(5);
 
@@ -30,6 +30,8 @@ public class Main {
 			System.out.println(metod.square(a, b, c));
 			System.out.print("Высота: ");
 			System.out.println(metod.height(a, b, c));
+			System.out.print("Угол: ");
+			System.out.println(metod.angle(a, b, c));
 		}
 
 	}
